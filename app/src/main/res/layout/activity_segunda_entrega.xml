@@ -7,7 +7,7 @@
     tools:context=".SegundaEntrega">
 
     <Button
-        android:id="@+id/buttonMas"
+        android:id="@+id/botonMas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="149dp"
@@ -15,6 +15,7 @@
         android:layout_marginEnd="174dp"
         android:layout_marginBottom="588dp"
         android:text="@string/buttonMas"
+        android:onClick="sumar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -23,7 +24,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/botonMenos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
@@ -31,13 +32,14 @@
         android:layout_marginEnd="162dp"
         android:layout_marginBottom="477dp"
         android:text="@string/buttonMenos"
+        android:onClick="restar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMas" />
+        app:layout_constraintTop_toBottomOf="@+id/botonMas" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/botonDiv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
@@ -45,13 +47,14 @@
         android:layout_marginEnd="173dp"
         android:layout_marginBottom="366dp"
         android:text="@string/ButtonDiv"
+        android:onClick="dividir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/botonMenos" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/botonMult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
@@ -59,13 +62,14 @@
         android:layout_marginEnd="167dp"
         android:layout_marginBottom="246dp"
         android:text="@string/buttonMult"
+        android:onClick="multiplicar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/botonDiv" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textResultado"
         android:layout_width="309dp"
         android:layout_height="80dp"
         android:layout_marginStart="38dp"
@@ -76,5 +80,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        app:layout_constraintTop_toBottomOf="@+id/botonMult" />
 </androidx.constraintlayout.widget.ConstraintLayout>

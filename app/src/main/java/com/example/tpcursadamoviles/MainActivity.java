@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button siguiente;
+    private Button segundaEntrega;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent siguiente = new Intent(MainActivity.this,PrimeraEntrega.class);
+                startActivity(siguiente);
+            }
+        });
+
+        segundaEntrega = (Button) findViewById(R.id.buttonSegEnt);
+        segundaEntrega.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent siguiente = new Intent(MainActivity.this,SegundaEntrega.class);
                 startActivity(siguiente);
             }
         });

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">TpCursadaMoviles</string>
+    <string name="buttonSegEnt">SEGUNDA ENTREGA</string>
+    <string name="buttonMas">+</string>
+    <string name="buttonMenos">-</string>
+    <string name="ButtonDiv">/</string>
+    <string name="buttonMult">*</string>
+    <string name="textResultado">Resultado:</string>
+    <string name="buttonDone">DONE</string>
+    <string name="buttonValor2" />
 </resources>

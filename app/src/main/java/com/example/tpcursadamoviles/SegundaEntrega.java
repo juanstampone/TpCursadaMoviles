@@ -18,10 +18,12 @@ public class SegundaEntrega extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         SegundaEntrega.super.onActivityResult(requestCode,resultCode,data);
-        Float reply = data.getFloatExtra("Resultado",0);
-        System.out.println("Resultado Final: " + reply);
         TextView numberResultado = (TextView) findViewById(R.id.textResultado);
-        numberResultado.setText(String.valueOf(reply));
+        if (data.getExtras() != null && resultCode == RESULT_OK) {
+            float reply = data.getFloatExtra("Resultado", 0);
+            numberResultado.setText(String.valueOf(reply));
+        }else
+            numberResultado.setText("Operacion cancelada");
     }
 
     @Override

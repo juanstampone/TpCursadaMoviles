@@ -8,4 +8,6 @@
     <string name="textResultado">Resultado:</string>
     <string name="buttonDone">DONE</string>
     <string name="buttonValor2" />
+    <string name="val1">value 1</string>
+    <string name="val2">value 2</string>
 </resources>

@@ -14,17 +14,36 @@ public class SegundaEntrega extends AppCompatActivity {
     private Button buttonMenos;
     private Button buttonDiv;
     private Button buttonMult;
+    float resultadoOperacion;
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         SegundaEntrega.super.onActivityResult(requestCode,resultCode,data);
         TextView numberResultado = (TextView) findViewById(R.id.textResultado);
         if (data.getExtras() != null && resultCode == RESULT_OK) {
-            float reply = data.getFloatExtra("Resultado", 0);
-            numberResultado.setText(String.valueOf(reply));
+            resultadoOperacion = data.getFloatExtra("Resultado", 0);
+            numberResultado.setText(String.valueOf(resultadoOperacion));
         }else
             numberResultado.setText("Operacion cancelada");
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle guardaEstado) {
+        super.onSaveInstanceState(guardaEstado);
+        //lo "guardamos" en el Bundle
+        guardaEstado.putFloat("resultado", resultadoOperacion);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle recuperaEstado) {
+        super.onRestoreInstanceState(recuperaEstado);
+        //recuperamos el num del Bundle
+        TextView numberResultado = (TextView) findViewById(R.id.textResultado);
+        resultadoOperacion = recuperaEstado.getFloat("resultado");
+        //Seteamos el valor del EditText con el valor de nuestra cadena
+        numberResultado.setText(String.valueOf(resultadoOperacion));
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

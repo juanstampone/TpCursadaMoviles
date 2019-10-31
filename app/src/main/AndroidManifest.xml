@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Calculo"></activity>
+        <activity android:name=".TerceraEntrega"></activity>
+        <activity android:name=".Calculo" />
         <activity android:name=".SegundaEntrega" />
         <activity android:name=".PrimeraEntrega" />
         <activity android:name=".MainActivity">

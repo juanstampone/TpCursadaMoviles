@@ -6,34 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/botonSig"
-        android:layout_width="202dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="236dp"
-        android:layout_marginTop="118dp"
-        android:layout_marginEnd="293dp"
-        android:layout_marginBottom="27dp"
-        android:text="@string/PrimeraEntrega"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSegEnt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/buttonSegEnt"
-        android:layout_width="202dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="119dp"
-        android:layout_marginBottom="172dp"
-        android:text="@string/buttonSegEnt"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonSig" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonTerEnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonTerEnt" />
+
+        <Button
+            android:id="@+id/botonSig"
+            android:layout_width="191dp"
+            android:layout_height="49dp"
+            android:text="@string/PrimeraEntrega" />
+
+        <Button
+            android:id="@+id/buttonSegEnt"
+            android:layout_width="191dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="119dp"
+            android:layout_marginBottom="172dp"
+            android:text="@string/buttonSegEnt" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

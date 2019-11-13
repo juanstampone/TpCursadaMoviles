@@ -16,25 +16,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/start"
+            android:onClick="onStart"
+
             />
 
         <Button
             android:id="@+id/stop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/stop" />
+            android:text="@string/stop"
+            android:onClick="onStop"
+
+            />
+
 
         <Button
             android:id="@+id/reset"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/reset" />
+            android:text="@string/reset"
+            android:onClick="onReset"/>
 
-        <TextView
-            android:id="@+id/step"
+        <EditText
+            android:id="@+id/espera"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/step" />
+            android:ems="10"
+            android:inputType="number" />
 
         <TextView
             android:id="@+id/contador"

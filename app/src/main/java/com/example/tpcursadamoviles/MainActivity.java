@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button siguiente;
     private Button segundaEntrega;
-    private Button terceraEntregra;
+    private Button terceraEntrega;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        terceraEntregra = (Button) findViewById(R.id.buttonTerEnt);
-        segundaEntrega.setOnClickListener(new View.OnClickListener() {
+        terceraEntrega = (Button) findViewById(R.id.buttonTerEnt);
+        terceraEntrega.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent siguiente = new Intent(MainActivity.this,TerceraEntrega.class);

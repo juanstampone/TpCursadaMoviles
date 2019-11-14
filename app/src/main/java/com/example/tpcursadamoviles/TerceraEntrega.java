@@ -15,7 +15,7 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class TerceraEntrega extends AppCompatActivity {
-/*** CONTADOR EN BACKGROUND , AL CERRAR LA APP RECUERDA TANTO EL VALOR DE SLEEP COMO LA CUENTA. ***/
+/*** CONTADOR EN BACKGROUND , AL CERRAR LA APP RECUERDA TANTO EL VALOR DE SLEEP COMO LA CUENTA ***/
     private Button start;
     private Button stop;
     private Button reset;

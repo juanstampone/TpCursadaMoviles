@@ -16,6 +16,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
+            android:id="@+id/buttonCuartEnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cuartaEntrega" />
+
+        <Button
             android:id="@+id/buttonTerEnt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

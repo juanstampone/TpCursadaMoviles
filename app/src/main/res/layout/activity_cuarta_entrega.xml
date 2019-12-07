@@ -4,20 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SegundaEntrega">
+    tools:context=".CuartaEntrega">
 
     <LinearLayout
         android:layout_width="328dp"
         android:layout_height="522dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="105dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="104dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/buttonIS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Intent Service" />
+            android:onClick="intent_receiver"
+            android:text="@string/buttonIS" />
 
         <TextView
             android:id="@+id/textViewIS"
@@ -33,6 +40,7 @@
             android:id="@+id/buttonS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="service_receiver"
             android:text="@string/buttonS" />
 
         <TextView
@@ -49,6 +57,7 @@
             android:id="@+id/buttonBS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="service_bound_receiver"
             android:text="@string/buttonBS" />
 
         <TextView

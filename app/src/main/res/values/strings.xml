@@ -17,10 +17,11 @@
     <string name="stop">stop</string>
     <string name="step">step</string>
     <string name="contador">contador</string>
-    <string name="buttonIS">buttonIS</string>
+    <string name="buttonIS">IntentService</string>
     <string name="testViewIS">IS:</string>
     <string name="buttonS">Service</string>
     <string name="textS">S:</string>
     <string name="buttonBS">Bound Service</string>
     <string name="textBS">BS:</string>
+    <string name="cuartaEntrega">cuartaEntrega</string>
 </resources>

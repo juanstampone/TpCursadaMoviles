@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button siguiente;
     private Button segundaEntrega;
     private Button terceraEntrega;
+    private Button cuartaEntrega;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,5 +45,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        cuartaEntrega = (Button) findViewById(R.id.buttonCuartEnt);
+        cuartaEntrega.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent siguiente = new Intent(MainActivity.this,CuartaEntrega.class);
+                startActivity(siguiente);
+            }
+        });
+
+
     }
+
 }

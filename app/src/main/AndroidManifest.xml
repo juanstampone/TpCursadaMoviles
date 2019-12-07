@@ -12,6 +12,8 @@
         <activity android:name=".TerceraEntrega"></activity>
         <activity android:name=".Calculo" />
         <activity android:name=".SegundaEntrega" />
+        <activity android:name=".CuartaEntrega" />
+
         <activity android:name=".PrimeraEntrega" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -20,6 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".ServiceIntent" />
+        <service android:name=".Services" />
+        <service android:name=".ServiceMessenger" />
+
+
     </application>
 
 </manifest>

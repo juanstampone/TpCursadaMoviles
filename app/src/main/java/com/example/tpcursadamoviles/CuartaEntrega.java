@@ -35,9 +35,9 @@ public class CuartaEntrega extends AppCompatActivity {
         textViewIs = (TextView) findViewById(R.id.textViewIS);
         textS = (TextView) findViewById(R.id.textS);
         textBound = (TextView) findViewById(R.id.textBS);
-        textS.setText("Service");
-        textViewIs.setText("Intent Service");
-        textBound.setText("Service Bound");
+        textS.setText("Service: ");
+        textViewIs.setText("Intent Service: ");
+        textBound.setText("Service Bound: ");
         IntentFilter filter = new IntentFilter();
         filter.addAction(ServiceIntent.PROGRESO);
         filter.addAction(ServiceIntent.FIN);
@@ -53,7 +53,7 @@ public class CuartaEntrega extends AppCompatActivity {
     }
 
     public void service_receiver(View view) {
-
+        textS.setText("Service: ");
         Intent intent = new Intent(this, Services.class);
         for (int i = 0; i <= 4; i++) {
             intent.putExtra("iteration", i);

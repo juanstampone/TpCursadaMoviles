@@ -6,80 +6,107 @@
     android:layout_height="match_parent"
     tools:context=".Calculo">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="220dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="594dp"
-        android:text="@string/val1"
+    <LinearLayout
+        android:layout_width="346dp"
+        android:layout_height="595dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="68dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
-    <EditText
-        android:id="@+id/buttonValor1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="525dp"
-        android:ems="10"
-        android:inputType="number|numberSigned"
-        android:singleLine="true"
-        android:imeOptions="actionNext"
-        android:onClick="mostrarBotonTerminar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            tools:layout_editor_absoluteX="-170dp"
+            tools:layout_editor_absoluteY="527dp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="230dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="58dp"
-        android:text="@string/val2"
-        app:layout_constraintBottom_toTopOf="@+id/buttonValor2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonValor1" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val1"
+            tools:layout_editor_absoluteX="-170dp"
+            tools:layout_editor_absoluteY="549dp" />
 
-    <Button
-        android:id="@+id/buttonDone"
-        android:layout_width="228dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="97dp"
-        android:layout_marginEnd="86dp"
-        android:layout_marginBottom="125dp"
-        android:enabled="false"
-        android:text="@string/buttonDone"
-        android:onClick="calcularResultado"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            tools:layout_editor_absoluteX="-170dp"
+            tools:layout_editor_absoluteY="527dp" />
 
-    <EditText
-        android:id="@+id/buttonValor2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="93dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginBottom="122dp"
-        android:ems="10"
-        android:inputType="number|numberSigned"
-        android:singleLine="true"
-        android:imeOptions="actionDone"
-        android:onClick="mostrarBotonTerminar"
-        app:layout_constraintBottom_toTopOf="@+id/buttonDone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        <EditText
+            android:id="@+id/buttonValor1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberSigned"
+            android:onClick="mostrarBotonTerminar"
+            android:singleLine="true"
+            tools:layout_editor_absoluteX="-73dp"
+            tools:layout_editor_absoluteY="605dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            tools:layout_editor_absoluteX="-170dp"
+            tools:layout_editor_absoluteY="527dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val2"
+            tools:layout_editor_absoluteX="-170dp"
+            tools:layout_editor_absoluteY="1130dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            tools:layout_editor_absoluteX="-170dp"
+            tools:layout_editor_absoluteY="527dp" />
+
+        <EditText
+            android:id="@+id/buttonValor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="number|numberSigned"
+            android:onClick="mostrarBotonTerminar"
+            android:singleLine="true"
+            tools:layout_editor_absoluteX="-77dp"
+            tools:layout_editor_absoluteY="1187dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            tools:layout_editor_absoluteX="-170dp"
+            tools:layout_editor_absoluteY="527dp" />
+
+        <Button
+            android:id="@+id/buttonDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:onClick="calcularResultado"
+            android:text="@string/buttonDone"
+            tools:layout_editor_absoluteX="-73dp"
+            tools:layout_editor_absoluteY="1309dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            tools:layout_editor_absoluteX="-170dp"
+            tools:layout_editor_absoluteY="527dp" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
